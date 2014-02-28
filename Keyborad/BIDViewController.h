@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface BIDViewController : UIViewController
-
+@interface BIDViewController : UIViewController<UITextFieldDelegate>
+-(void)textFieldDidBeginEditing:(UITextField *)textField;
+-(BOOL)textFieldShouldReturn:(UITextField *)textField;
+-(void)textFieldDidEndEditing:(UITextField *)textField;
 @end
